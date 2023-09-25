@@ -1,0 +1,69 @@
+pip install numpy
+import numpy as np
+
+# Create a NumPy array from a list
+my_list = [1, 2, 3, 4, 5]
+my_array = np.array(my_list)
+
+# Access elements of the array
+print("Array elements:", my_array)
+
+# Get the shape (dimensions) of the array
+print("Array shape:", my_array.shape)
+
+# Get the data type of the array elements
+print("Data type:", my_array.dtype)
+
+# Perform basic operations on the array
+# Addition
+result_add = my_array + 10
+print("Addition:", result_add)
+
+# Subtraction
+result_sub = my_array - 2
+print("Subtraction:", result_sub)
+
+# Multiplication
+result_mul = my_array * 3
+print("Multiplication:", result_mul)
+
+# Division
+result_div = my_array / 2
+print("Division:", result_div)
+
+# Element-wise operations with another array
+another_array = np.array([5, 4, 3, 2, 1])
+
+# Element-wise addition
+result_add_elem = my_array + another_array
+print("Element-wise addition:", result_add_elem)
+
+# Element-wise multiplication
+result_mul_elem = my_array * another_array
+print("Element-wise multiplication:", result_mul_elem)
+
+# Reshaping the array
+reshaped_array = my_array.reshape(5, 1)
+print("Reshaped array:\n", reshaped_array)
+
+# Indexing and slicing
+print("First element:", my_array[0])
+print("Slicing from index 1 to 3:", my_array[1:4])
+
+# Boolean indexing
+mask = my_array > 3
+print("Elements greater than 3:", my_array[mask])
+
+# Sum of array elements
+array_sum = np.sum(my_array)
+print("Sum of array elements:", array_sum)
+
+# Mean of array elements
+array_mean = np.mean(my_array)
+print("Mean of array elements:", array_mean)
+
+# Maximum and minimum values
+array_max = np.max(my_array)
+array_min = np.min(my_array)
+print("Maximum:", array_max)
+print("Minimum:", array_min)
